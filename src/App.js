@@ -1,6 +1,7 @@
 import './App.css';
 import { Button } from './components/button.jsx';
 import { Terminal } from './components/terminal.jsx';
+import { CleanButton } from './components/clean button.jsx';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1 className='title'>Web Calculator</h1>
       <div className='container_calculator'>
         <Terminal></Terminal>
+        <CleanButton>Clean</CleanButton>
         <div className='calculator_row'>
           <Button>1</Button>
           <Button>2</Button>
