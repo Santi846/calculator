@@ -13,7 +13,7 @@
     margin: 4px;
     cursor: pointer;
     user-select: none;
-    
+    box-shadow: -1px 4px 1px 1px black;
 }
 
 .calculator_button:hover{
