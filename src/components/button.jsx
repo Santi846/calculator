@@ -8,7 +8,9 @@ export function Button(props) {
     };
 
     return (
-        <div className={`calculator_button ${isOperator(props.children) ? 'operator' : ''}`.trimEnd()}>
+        <div className={`calculator_button ${isOperator(props.children) ? 'operator' : ''}`.trimEnd()}
+         onClick={() => props.manageClick(props.children)}
+        >
             {props.children}
         </div>
     );
