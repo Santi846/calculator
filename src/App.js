@@ -7,23 +7,26 @@ import { evaluate } from 'mathjs';
 
 function App() {
 
-   const [ input, setInput ] = useState(0);
+   const [ input, setInput ] = useState('');
 
    const addInput = value => {
     setInput(input + value);
    }
 
    const restart = value => {
-    setInput(0);
+    setInput('');
    }
 
    const result = () => {
     if (input) {
       setInput(evaluate(input));
     }
-     alert('Por favor ingrese valores para realizar los calculos, gracias');
+    else {
+      alert('Por favor ingrese valores para realizar los calculos, gracias');
+    }
    }
 
+   //TODO: *Iteration when input is an operator or not, to show a message* 
 
   return (
     <div className="App">
