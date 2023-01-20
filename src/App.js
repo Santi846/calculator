@@ -3,6 +3,7 @@ import { Button } from './components/button.jsx';
 import { Terminal } from './components/terminal.jsx';
 import { CleanButton } from './components/clean button.jsx';
 import { useState } from 'react';
+import { evaluate } from 'mathjs';
 
 function App() {
 
@@ -14,6 +15,10 @@ function App() {
 
    const restart = value => {
     setInput(0);
+   }
+
+   const result = () => {
+     setInput(evaluate(input));
    }
 
 
