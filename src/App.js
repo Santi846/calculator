@@ -18,7 +18,10 @@ function App() {
    }
 
    const result = () => {
-     setInput(evaluate(input));
+    if (input) {
+      setInput(evaluate(input));
+    }
+     alert('Por favor ingrese valores para realizar los calculos, gracias');
    }
 
 
@@ -47,7 +50,7 @@ function App() {
         <Button manageClick={addInput}>*</Button>
         </div>
         <div className='calculator_row'>
-        <Button manageClick={addInput}>=</Button>
+        <Button manageClick={result}>=</Button>
         <Button manageClick={addInput}>0</Button>
         <Button manageClick={addInput}>.</Button>
         <Button manageClick={addInput}>/</Button>
