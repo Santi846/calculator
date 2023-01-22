@@ -26,7 +26,7 @@ function App() {
     }
    };
 
-   //TODO: *Iteration when input is an operator or not, to show a message* 
+   //TODO: *Iteration when input is an operator or not, to show a message* - *Verify use cases* - *Delete button (a character)*
 
   return (
     <div className="App">
