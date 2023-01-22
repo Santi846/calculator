@@ -4,6 +4,7 @@ import { Terminal } from './components/terminal.jsx';
 import { CleanButton } from './components/clean button.jsx';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
+import { Delete } from './components/delete';
 
 function App() {
 
@@ -11,6 +12,10 @@ function App() {
 
    const addInput = value => {
     setInput(input + value);
+   };
+
+   const deleteInput = value => {
+    setInput(input.slice(0,-1));
    };
 
    const restart = value => {
@@ -26,14 +31,17 @@ function App() {
     }
    };
 
-   //TODO: *Iteration when input is an operator or not, to show a message* - *Verify use cases* - *Delete button (a character)*
+   //TODO: *Iteration when input is an operator or not, to show a message* - *Verify use cases*
 
   return (
     <div className="App">
       <h1 className='title'>Web Calculator</h1>
       <div className='container_calculator'>
         <Terminal input={input} ></Terminal>
+        <div className='calculator_row'>
         <CleanButton restart={restart}>Clean</CleanButton>
+        <Delete delete={deleteInput}>Delete</Delete>
+        </div>
         <div className='calculator_row'>
           <Button manageClick={addInput}>1</Button>
           <Button manageClick={addInput}>2</Button>

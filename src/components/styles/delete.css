@@ -1,4 +1,4 @@
-.clean_button{
+.delete_button{
     height: 20px;
     width: 100px;
     font-size: 1.6em;
@@ -15,7 +15,7 @@
     box-shadow: -1px 4px 1px 1px black;
 }
 
-.clean_button:hover{
+.delete_button:hover{
     height: 20px;
     width: 100px;
     font-size: 1.6em;
