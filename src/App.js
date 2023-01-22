@@ -11,11 +11,11 @@ function App() {
 
    const addInput = value => {
     setInput(input + value);
-   }
+   };
 
    const restart = value => {
     setInput('');
-   }
+   };
 
    const result = () => {
     if (input) {
@@ -24,7 +24,7 @@ function App() {
     else {
       alert('Por favor ingrese valores para realizar los calculos, gracias');
     }
-   }
+   };
 
    //TODO: *Iteration when input is an operator or not, to show a message* 
 
