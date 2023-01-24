@@ -14,8 +14,8 @@ function App() {
     setInput(input + value);
    };
 
-   const deleteInput = value => {
-    setInput(input.slice(0,-1));
+   const deleteInput = value => {  
+      setInput(input.slice(0,-1));
    };
 
    const restart = value => {

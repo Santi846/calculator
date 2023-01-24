@@ -2,9 +2,17 @@ import React from "react";
 import '../components/styles/button.css';
 
 export function Button(props) {
+    // const [ input, setValue ] = useState('');
+
+    // const setTerminalValue = value => {
+    //     setValue(input = '+' | '-' | '*' | '/');
+    //    };
 
     const isOperator = value => {
-        return isNaN(value) && (value !== '.') && (value !== '=');
+        return isNaN(value) && (value !== '.') && (value !== '=') 
+        //  && (value = (/^[+]|[-]|[*]|[/]$/))
+        
+        ;
     };
 
     if (isOperator(props.children)) {
