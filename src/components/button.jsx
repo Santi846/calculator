@@ -14,7 +14,7 @@ export function Button(props) {
         
         ;
     };
-
+//TODO: *The operations must have 1 operator -> look at some calculators*
     if (isOperator(props.children)) {
         return (
             <button className='calculator_button operator'

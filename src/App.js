@@ -31,7 +31,7 @@ function App() {
     }
    };
 
-   //TODO: *Iteration when input is an operator or not, to show a message* - *Verify use cases*
+  
 
   return (
     <div className="App">
