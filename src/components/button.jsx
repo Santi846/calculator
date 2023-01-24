@@ -8,12 +8,16 @@ export function Button(props) {
     //     setValue(input = '+' | '-' | '*' | '/');
     //    };
 
+  
+
     const isOperator = value => {
-        return isNaN(value) && (value !== '.') && (value !== '=') 
+        return isNaN(value) && (value !== '.') && (value !== '=') && (value + value) | (value - value) | (value * value) |  (value / value)
         //  && (value = (/^[+]|[-]|[*]|[/]$/))
-        
         ;
     };
+
+    
+
 //TODO: *The operations must have 1 operator -> look at some calculators*
     if (isOperator(props.children)) {
         return (
