@@ -11,14 +11,12 @@ export function Button(props) {
   
 
     const isOperator = value => {
-        return isNaN(value) && (value !== '.') && (value !== '=') && (value + value) | (value - value) | (value * value) |  (value / value)
-        //  && (value = (/^[+]|[-]|[*]|[/]$/))
-        ;
+        return isNaN(value) && (value !== '.') && (value !== '=');
     };
 
     
 
-//TODO: *The operations must have 1 operator -> look at some calculators*
+//TODO: *Put the inputs in an array and if the second position is an operator and the third too, replace it*
     if (isOperator(props.children)) {
         return (
             <button className='calculator_button operator'
