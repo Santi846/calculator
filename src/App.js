@@ -31,6 +31,7 @@ function App() {
     }
    };
 
+   
   
 
   return (
@@ -46,7 +47,7 @@ function App() {
           <Button manageClick={addInput}>1</Button>
           <Button manageClick={addInput}>2</Button>
           <Button manageClick={addInput}>3</Button>
-          <Button manageClick={addInput}>+</Button>
+          <Button manageClick={addInput} >+</Button>
         </div>
         <div className='calculator_row'>
         <Button manageClick={addInput}>4</Button>
