@@ -31,21 +31,7 @@ function App() {
     }
    };
 
-  //  state = {
-  //   count: 0
-  // };
 
-  // handleClick = e => {
-  //   const count = this.state.count;
-  //   this.setState({ count: count + 1 });
-  // };
-  const [numberOperator, setNumCOperators ] = useState(0);
-
-  const manageOperatorClick = () => {
-    setNumCOperators(numberOperator + 1);
-   console.log('Counting...');
- };
-  
 
   return (
     <div className="App">
@@ -60,25 +46,25 @@ function App() {
           <Button manageClick={addInput}>1</Button>
           <Button manageClick={addInput}>2</Button>
           <Button manageClick={addInput}>3</Button>
-          <Button manageClick={addInput} operation={manageOperatorClick}>+</Button>
+          <Button manageClick={addInput} >+</Button>
         </div>
         <div className='calculator_row'>
         <Button manageClick={addInput}>4</Button>
         <Button manageClick={addInput}>5</Button>
         <Button manageClick={addInput}>6</Button>
-        <Button manageClick={addInput} operation={manageOperatorClick}>-</Button>
+        <Button manageClick={addInput} >-</Button>
         </div>
         <div className='calculator_row'>
         <Button manageClick={addInput}>7</Button>
         <Button manageClick={addInput}>8</Button>
         <Button manageClick={addInput}>9</Button>
-        <Button manageClick={addInput} operation={manageOperatorClick}>*</Button>
+        <Button manageClick={addInput} >*</Button>
         </div>
         <div className='calculator_row'>
         <Button manageClick={result}>=</Button>
         <Button manageClick={addInput}>0</Button>
         <Button manageClick={addInput}>.</Button>
-        <Button manageClick={addInput} operation={manageOperatorClick}>/</Button>
+        <Button manageClick={addInput} >/</Button>
         </div>
         <div className='calculator_row'></div>
         
