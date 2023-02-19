@@ -11,13 +11,6 @@ import { evaluate } from 'mathjs';
 function App() {
 
    const [ input, setInput ] = useState('');
-
-  //  const addInput = value => {
-  //   setInput(input + value);
-  //  };
-
-  const rejexValue1 = /^[0-9]*$/;
-
   
    const addInput = value => {
     setInput(input + value);
